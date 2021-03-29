@@ -77,6 +77,10 @@ section#boxes img {
     height: 200px;
 }
 
+section#boxes {
+    text-align: center;
+}
+
 section#newsletter {
     background-color: rgb(33, 51, 79);
     color: white;
