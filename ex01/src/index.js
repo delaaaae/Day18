@@ -1,15 +1,20 @@
 let myArr = [];
 
 function* multiplication(x) {
-    for (int i = 1; i <= 10000; i++) {
-        int i = i * 2;
+   
+    for(i = 0; i < 3; i++) {
+        yield x;
+        x *= 2;
+        yield x;
+        myArr.push(x);
     }
-    console.log(x);
-    yield x;
-    myArr.push(x);
+   return x;
+
 }
 var num = multiplication(3);
 
-
+for(number of num){
+    console.log(num.next().value);
+}
 
 module.exports = multiplication;
