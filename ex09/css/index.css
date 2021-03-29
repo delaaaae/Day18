@@ -79,6 +79,7 @@ section#boxes img {
 
 section#boxes {
     text-align: center;
+    padding: 10px;
 }
 
 section#newsletter {
